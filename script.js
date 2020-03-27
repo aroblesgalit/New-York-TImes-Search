@@ -3,12 +3,14 @@
 // Understand what format the URL should look like to make an article call
 // Experiment with console logging various fields
 
+const apiKey = "uyGLL9yOJVBJoBF4IPKDZe8t1MgduBpS"
+
 $("searchBtn").on("click", function() {
 
 function displayArticleInfo() {
 
     
-    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json&api-key=uyGLL9yOJVBJoBF4IPKDZe8t1MgduBpS";
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json&api-key=" + apiKey;
 
     $.ajax({
       url: queryURL,
@@ -17,7 +19,4 @@ function displayArticleInfo() {
         $("top-results")
     }
   }
-  begin_date //beginning date
-  end_date // ending date
-  q //search term
-  fl=web_url // limit number of articles?
+  
