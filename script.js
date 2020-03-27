@@ -8,13 +8,16 @@ $("searchBtn").on("click", function() {
 function displayArticleInfo() {
 
     
-    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json&apikey=uyGLL9yOJVBJoBF4IPKDZe8t1MgduBpS";
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json&api-key=uyGLL9yOJVBJoBF4IPKDZe8t1MgduBpS";
 
     $.ajax({
       url: queryURL,
       method: "GET"
     }).then(function(response){
-
+        $("top-results")
     }
   }
-}
+  begin_date //beginning date
+  end_date // ending date
+  q //search term
+  fl=web_url // limit number of articles?
