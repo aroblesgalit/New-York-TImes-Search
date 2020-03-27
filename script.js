@@ -1,23 +1,18 @@
-// Do preliminary research on the API using the link above
-// Register for an API key if you haven't already
-// Understand what format the URL should look like to make an article call
-// Experiment with console logging various fields
+//when button is clicked
+$("#searchBtn").click( function (){
+// Get data from the form and store into variables- please add into searchBtn clickevent
 
-$("searchBtn").on("click", function() {
+//API key needs to be seperate from URL so I can add in the searchInput
+var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=";
+var searchInput = document.getElementById("#searchTerm");
+var apiKey = "&api-key=uyGLL9yOJVBJoBF4IPKDZe8t1MgduBpS";
 
-function displayArticleInfo() {
+$.ajax({
+    url: queryURL + searchInput + apiKey
+    method: "GET"
+  }).then(function(response){
+      $("top-results")
+  };
 
-    
-    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json&api-key=uyGLL9yOJVBJoBF4IPKDZe8t1MgduBpS";
 
-    $.ajax({
-      url: queryURL,
-      method: "GET"
-    }).then(function(response){
-        $("top-results")
-    }
-  }
-  begin_date //beginning date
-  end_date // ending date
-  q //search term
-  fl=web_url // limit number of articles?
+});
