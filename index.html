@@ -11,27 +11,40 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form>
-        <div class="form-group">
-          <label id= "searchTerm" for="formGroupExampleInput">Example label</label>
-          <input  type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-        </div>
+    <div class="container">
+        <header>
+            <h1>New York Times Search</h1>
+        </header>
+        <form id="search-param">
+            <div class="form-heading">Search Parameters</div>
+            <div class="form-group">
+              <label id= "searchTerm" for="formGroupExampleInput">Search Term:</label>
+              <input  type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+            </div>
+    
+            <div class="form-group">
+              <label id ="#ofRecords" for="formGroupExampleInput2">Number of Records to Retrieve:</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+            </div>
+            <!--this form field is optional-->
+            <div class="form-group">
+                <label id= "startYear" for="formGroupExampleInput">Example label</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+            </div>
+            <!-- the form field is optional-->
+            <div class="form-group">
+                <label id= "endYear" for="formGroupExampleInput2">Start Year (Optional):</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+            </div>
+            <button id="searchBtn" class="form-buttons">Search</button><button id="clearBtn" class="form-buttons">Clear Results</button>
+        </form>
 
-        <div class="form-group">
-          <label id ="#ofRecords" for="formGroupExampleInput2">Another label</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+        <div id="top-articles">
+            <div class="form-heading">Top Articles</div>
+            <div id="top-results"></div>
         </div>
-        <!--this form field is optional-->
-        <div class="form-group">
-            <label id= "startYear" for="formGroupExampleInput">Example label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-        </div>
-        <!-- the form field is optional-->
-        <div class="form-group">
-            <label id= "endYear" for="formGroupExampleInput2">Another label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-        </div>
-    </form>
-      </form>
+    </div>
+
+
 </body>
 </html>

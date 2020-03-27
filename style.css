@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 40px;
+    background-color: rgb(25, 25, 71);
+    color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+form, #top-articles {
+    border: 1px solid rgb(25, 25, 71);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#top-articles {
+    margin-top: 20px;
+}
+
+.form-heading {
+    background-color: #eeeeee;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    padding: 0 10px;
+}
+
+.form-buttons {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+}
+
+#searchBtn {
+
+    margin-right: 20px;
+}
