@@ -3,10 +3,8 @@ $("#searchBtn").on("click", function(e) {
   e.preventDefault();
 
   // Get data from the form and store into variables
-  
+
 })
-
-
 
 
 
