@@ -19,7 +19,7 @@ $(document).ready(function () {
       for (var i = 0; i < numOfRecords; i++) {
         
         var newArticle = $("<div>").addClass("newArticle");
-        var newArticleTitle = $("<h3>").text(data.response.docs[i].headline.main);
+        var newArticleTitle = $("<h3>").text((i + 1) + ". " + data.response.docs[i].headline.main);
         var newArticleAbstract = $("<p>").text(data.response.docs[i].abstract);
 
         newArticle.append(newArticleTitle);
