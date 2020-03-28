@@ -42,3 +42,8 @@ form, #top-articles {
 
     margin-right: 20px;
 }
+
+.newArticle {
+    padding: 20px 20px 10px 20px;
+    border-bottom: 1px solid #c0c0c0;
+}
